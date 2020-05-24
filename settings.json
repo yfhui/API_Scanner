@@ -1,0 +1,40 @@
+{
+    "domain" : "localhost",
+    "inputFileName":"wordList",
+    "outputFileName":"result",
+    "portScanningMode":false,
+    "HTTPmethods":["get"],
+    "allowedStatusCodes" : [200,201,202,204,302,304,400,401,403],
+    "httpsMode" : true,
+    "timeOut":5,
+    "threadsToScanPort" : 2,
+    "threadsToScanWord" : 100,
+
+    "versionedSearchMode":true,
+    "versionedSearchModeSetting":{
+        "verionNameList" : ["v1","v2"] 
+    },
+
+    "bruteForceMode" :false,
+    "bruteForceModeSetting":{
+        "sizeOfWord":2,
+        "bruteForceString":null
+    },
+
+    "extendedSearchMode":false,
+    "extendedSearchModeSetting":{
+        "commonFileSuffixs":["html","php","htm","py","chtml","cgi","js"],
+        "commonFileNames":["index","default","home","server","request","get"]
+    },
+
+    "printLog" : true,
+    "printErr" : false,
+
+    "proxiesOnChangeMode":false,
+    "alwaysUseProxy":true,
+    "statusCodesChangeProxy":[403,406,429],
+    "proxiesList":
+        [
+            {"http"  :"http://46.35.249.189:32422", "https" :"http://46.28.229.78:3128"}
+        ]
+}
